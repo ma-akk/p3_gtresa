@@ -15,7 +15,7 @@ metadata:
   labels:
     app: wil42
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: wil42
@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
       - name: wil42
-        image: wil42/playground:v1
+        image: wil42/playground:v2
         ports:
         - containerPort: 8888
