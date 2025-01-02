@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: wil42
 spec:
+  selector:
+    app: wil42
   ports:
     - protocol: TCP
       port: 8888
